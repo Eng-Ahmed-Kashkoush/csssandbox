@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        line-height: 1.5em;
+        font-size: large;
+      }
+      /* internal */
+      #welcome p span {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 18;
+        font-style: italic;
+        color: violet;
+      }
+      /* External */
+      #about p span {
+        font-family: "Abril Fatface", cursive, sans-serif;
+
+        font-style: italic;
+        font-weight: bolder;
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <!-- Impleminting font family internal -->
+      <h2 class="primary-heading">Welcmo</h2>
+      <p>
+        Lorem
+        <span
+          >ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ad</span
+        >
+        sed facilis voluptatibus provident. Odio in error sunt? Laborum,
+        impedit.
+      </p>
+    </div>
+    <div id="about">
+      <!-- Impleminting font family  external -->
+      <h2>about</h2>
+      <p>
+        Lorem ipsum
+        <span>
+          sit, amet consectetur adipisicing elit. Consequuntur repellat cumque
+          repudiandae pariatur natus obcaecati, ad ab quod</span
+        >
+        reprehenderit eligendi.
+      </p>
+    </div>
+  </body>
+</html>

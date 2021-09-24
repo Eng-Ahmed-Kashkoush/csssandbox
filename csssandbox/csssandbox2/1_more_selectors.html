@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Targeted selectors</title>
+    <style>
+      /* Direct child of the div */
+      div > p {
+        background: #ddd;
+      }
+      /* Directly after the finishing div */
+      div + p {
+        background: #333;
+        color: #fff;
+      }
+      /* To call what has a target attrbute  */
+      a[target] {
+        color: red;
+      }
+      /* To call what has a _self value in the target */
+      a[target="_self"] {
+        color: rgb(98, 17, 230);
+      }
+      /* to call the name and email without the submit */
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <ul>
+        <li>item1</li>
+        <li><p>item2</p></li>
+        <li>item3</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="#">page 1</a><br /><a href="#" target="_blank"
+      >page that has a target</a
+    ><br /><a href="#" target="_self">
+      page that has _self value in the target
+    </a>
+    <br /><br /><br />
+    <form action="">
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

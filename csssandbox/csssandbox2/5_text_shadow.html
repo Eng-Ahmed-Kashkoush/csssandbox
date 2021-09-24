@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text shadow</title>
+    <style>
+      h1 {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 4rem;
+      }
+      h1.a {
+        /* h-shadow|v-shadow|color */
+        text-shadow: 0.6rem 0.5rem steelblue;
+      }
+      h1.b {
+        /* h-shadow|v-shadow|blur|color */
+        text-shadow: 0.6rem 0.5rem 0.5rem steelblue;
+      }
+      h1.c {
+        /* h-shadow|v-shadow|blur|color */
+        color: #fff;
+        text-shadow: 0.6rem 0.5rem 0.5rem steelblue;
+      }
+      h1.d {
+        /* we can add negative values so that the shadow will appear top and left
+        not like the default appears bottom and right */
+        /* h-shadow|v-shadow|color */
+        text-shadow: -0.6rem -0.5rem 0.5rem steelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="a">welcome to my course</h1>
+    <h1 class="b">welcome to my course</h1>
+    <h1 class="c">welcome to my course</h1>
+    <h1 class="d">welcome to my course</h1>
+  </body>
+</html>
